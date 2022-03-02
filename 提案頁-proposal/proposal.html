@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="proposal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-header">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./images/LOGO.png" alt="" width="300px" />
+        </div>
+        <nav class="navbar-nav">
+          <div class="dropdown">
+            <div class="activity">
+              <a href="#">公益活動<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-content">
+                <li><a href="#">公益活動</a></li>
+                <li><a href="#">數位發票箱</a></li>
+                <li><a href="#">愛心捐款</a></li>
+              </ul>
+            </div>
+            <div class="invoice">
+              <a href="#">公益捐贈<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-content">
+                <li><a href="#">物資捐贈</a></li>
+              </ul>
+            </div>
+            <a href="#">愛心餐廳</a>
+            <a href="#">捐血地圖</a>
+          </div>
+        </nav>
+        <div class="buttons">
+          <div class="login btn"><a href="#">會員登入</a></div>
+          <div class="register btn"><a href="#">註冊</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="proposal-background">
+        <div class="container p-5">
+          <div class="proposal-information" >
+            <div class="proposal-title">
+              <p>我要提專案</p><br>
+            </div>
+            
+  
+            <form class="proposal-info" action="#" method="get" enctype="multipart/form-data" >   
+              <div class="d-flex">
+  
+                <div class="col-6">
+                  <div class="proposal-group1">
+                    <label for="p-name">專案名稱</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <textarea class="form-control" name="pName" value="" rows="2" style="resize: none;"placeholder="可日後變更（例：ARRC 前瞻火箭｜台灣首支類衛星載具火箭 HTTP-3A 發射計畫" required></textarea><br>
+                  </div>
+
+                  <div class="proposal-group1">
+                    <label for="p-number">專案概述</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <textarea class="form-control" name="pNumber" rows="5" value="" style="resize: none;" placeholder="請用 250 字摘要您的集資目標與計畫內容。產品型專案請說明產品內容，非產品集資請說明集資目的。" required></textarea><br>
+                  </div>
+                  
+                  <div class="proposal-group1">
+                    <label for="p-type">目標金額(新台幣)</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <textarea type="text" class="form-control" name="type" rows="3" cols="40" placeholder="挖貝採取的是全有全無制（All or Nothing），因此團隊可簡略試算集資成本、生產成本或集資資金使用分配，以推算出集資金額的門檻。" style="resize: none;"></textarea><br>
+                  </div>
+                  
+                  <div class="proposal-group1">
+                  <label for="start">專案開始日</label>
+                  </div>
+                  <div class="proposal-group2">
+                  <input type="date" id="start" name="trip-start">
+                  </div>
+
+                
+                  <div class="proposal-group1">
+                  <label for="start">專案結束日</label>
+                  </div>
+                  <div class="proposal-group2">
+                  <input type="date" id="end" name="trip-end">
+                  </div><br>
+
+
+                  <div class="proposal-group1">
+                    <label for="p-type">聯絡窗口姓名</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <input type="text" class="form-control" name="price" placeholder="窗口的真實姓名"><br>
+                  </div>
+                  
+                  <div class="proposal-group1">
+                    <label for="p-type">聯絡電話</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <input type="phone" class="form-control" name="cellphone" placeholder="09xx-xxx-xxx/電話請加(區碼)"><br>
+                  </div>
+
+                  <div class="proposal-group1">
+                    <label for="p-type">電子郵件</label>
+                  </div>
+                  <div class="proposal-group2">
+                    <input type="email" class="form-control" name="cellphone" placeholder="此信箱提案信箱審核通過後，將會成為您的專案管理後台登入帳號。"><br>
+                  </div>
+
+                  <div class="col-6 text-center">
+                    <div class="proposal-img">
+                    <img src="images/Object_icon.svg" id="object-img" width="250" height="250">
+                    </div>
+                    <br>
+                    <div class="proposal-wrap">
+                      <div class="proposal-btn">
+                        <label class="upload-btn text-center" for="upload"><i class="bi bi-camera"></i> 上傳照片</i></label>
+                        <input type="file" id="upload" onchange="previewFile()"><br>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+  
+                  <br>
+                  <div class="proposal-line">
+                    <input type="submit" class="proposal-save btn" value="建立">
+                  </div>
+  
+                </div>
+              </div>
+            </form>
+            
+          </div>    
+        </div>
+      </section>
+
+ 
+    </main>
+
+    <footer>
+      <section class="footer-content">
+        <div class="left-info co1-12 mb-5 mr-md-4">
+          <div>
+            <img src="./images/LOGO.png" alt="" width="60%" />
+          </div>
+          <br />
+          <h4>關於我們</h4>
+          <div class="aboutUs">
+            <p>
+              樂心公益平台是一個線上公益平台，協助公益單位募款、募資及提供各種公益相關的資訊，透過網路縮短公益團體與捐款人的距離；透過平台降低公益團體使用網路募款的門檻，並提供捐款人多元捐款方式，簡化捐款流程，讓募款及捐款都更有效率、更透明！
+            </p>
+          </div>
+
+          <h4>聯絡我們</h4>
+          <div class="phone">
+            <i class="fas fa-phone" style="color: #5f1985"> </i>
+            <span style="font-size: 18px"> 0800-770-885</span><br />
+            <i class="fas fa-envelope" style="color: #5f1985"> </i>
+            <span style="font-size: 18px"> Charity@gmail.com</span>
+          </div>
+          <br />
+          <br />
+          <div class="Copyright">
+            <p>Copyright© 2022 Charity Inc.</p>
+          </div>
+        </div>
+        <div class="right-form col-12 col-md-8">
+          <div class="footer-form">
+            <form>
+              <h4>樂心意見信箱</h4>
+              <p>您的鼓勵是我們持續前進的動力，有任何問題歡迎留言給我們。</p>
+              <div class="form-group">
+                <label for="name">姓 名</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="留下您的稱呼"
+                  title="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="輸入您的email"
+                  title="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">意見回饋</label>
+                <textarea
+                  class="form-control"
+                  placeholder="您鼓勵的話語或寶貴的建議"
+                  title="message"
+                  required
+                  id="message"
+                  style="height: 150px"
+                ></textarea>
+
+                <button type="submit" class="btn1 btn-primary">送 出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="Object-Create.js"></script>
+  </body>
+</html>
